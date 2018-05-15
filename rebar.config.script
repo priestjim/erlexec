@@ -62,7 +62,7 @@ lists:keymerge(1,
                      {"CXXFLAGS", "$CXXFLAGS -DHAVE_PTRACE -std=c++98 -O" ++ OptimLevel}
                     ]},
 
-        {port_specs,[{filename:join(["priv", Mach, "exec-port"]), ["c_src/*.cpp"]}]},
+        {port_specs,[{filename:join(["priv", Mach, "exec-port"]), ["c_src/ei++.cpp", "c_src/exec.cpp", "c_src/exec_impl.cpp"]}]},
         {edoc_opts, [{overview,     "src/overview.edoc"},
                      {title,        "The exec application"},
                      {includes,     ["include"]},
